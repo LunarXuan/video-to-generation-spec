@@ -1,0 +1,31 @@
+{
+  "profile_version": "2026-09-04",
+  "generic": {
+    "native_language": "zh",
+    "prompt_style": "time-coded multi-shot natural language",
+    "warning": null
+  },
+  "veo": {
+    "native_language": "en",
+    "prompt_style": "cinematic prose with native audio cues",
+    "default_seconds": 8,
+    "warning": "Verify the active Veo model version, duration, resolution and reference-input capabilities before execution."
+  },
+  "sora": {
+    "native_language": "en",
+    "prompt_style": "chronological cinematic prose",
+    "allowed_legacy_seconds": [4, 8, 12],
+    "warning": "The official Sora API was marked deprecated with shutdown scheduled for 2026-09-24; re-check availability before execution."
+  },
+  "kling": {
+    "native_language": "zh",
+    "prompt_style": "multi-shot storyboard plus consolidated prose",
+    "warning": "Kling capabilities and request fields vary by exact model version and endpoint; verify before emitting executable parameters."
+  },
+  "wan": {
+    "native_language": "en",
+    "prompt_style": "dynamic action and camera-first prose",
+    "max_native_words": 100,
+    "warning": "Record the exact Wan task, checkpoint, resolution, frame count, sampler, steps, guidance, seed and prompt-extension mode."
+  }
+}

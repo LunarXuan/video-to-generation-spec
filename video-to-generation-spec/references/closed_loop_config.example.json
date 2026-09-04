@@ -1,0 +1,59 @@
+{
+  "target": {
+    "model": "wan2.2-t2v-a14b",
+    "version": "replace-with-exact-checkpoint-hash"
+  },
+  "generator": {
+    "candidate_extension": ".mp4",
+    "command": [
+      "python",
+      "path/to/generator_adapter.py",
+      "--prompt-file",
+      "{prompt_file}",
+      "--seed",
+      "{seed}",
+      "--output",
+      "{candidate_path}"
+    ]
+  },
+  "evaluator": {
+    "command": [
+      "python",
+      "path/to/evaluator_adapter.py",
+      "--reference",
+      "{reference}",
+      "--candidate",
+      "{candidate_path}",
+      "--output",
+      "{score_file}"
+    ]
+  },
+  "rewriter": {
+    "command": [
+      "python",
+      "path/to/rewriter_adapter.py",
+      "--prompt-file",
+      "{prompt_file}",
+      "--feedback",
+      "{feedback_file}",
+      "--output",
+      "{next_prompt_file}"
+    ]
+  },
+  "candidates_per_iteration": 3,
+  "max_iterations": 3,
+  "base_seed": 1000,
+  "target_score": 0.85,
+  "min_improvement": 0.01,
+  "patience": 2,
+  "command_timeout_seconds": 3600,
+  "score_weights": {
+    "semantic": 0.22,
+    "composition": 0.14,
+    "motion": 0.18,
+    "camera": 0.14,
+    "style": 0.12,
+    "temporal": 0.16,
+    "audio": 0.04
+  }
+}

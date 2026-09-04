@@ -1,0 +1,7 @@
+interface:
+  display_name: "视频反推提示词"
+  short_description: "逐镜头反推视频内容并生成适配主流目标模型的专业成品提示词"
+  default_prompt: "使用 $video-to-generation-spec 进行视频反推提示词，输出逐镜头分镜和目标模型成品提示词。"
+
+policy:
+  allow_implicit_invocation: true
