@@ -1,9 +1,9 @@
 ---
-name: video-to-generation-spec
+name: video-prompt-reverse
 description: "Reverse-engineer a supplied video into a shot-by-shot generation specification, displayed evidence frames, and paired Chinese-English prompt packages. Use for requests such as 视频反推提示词, 视频转提示词, 从视频生成提示词, 视频逆向提示词, 逐镜头反推, 分镜拆解并生成提示词, 反推视频 prompt, or video-to-prompt; also use for Veo, Sora, Kling, Wan, generic prompt adaptation, and bounded generate-compare-optimize loops. Do not use for ordinary video summaries or basic transcription."
 ---
 
-# Video to Generation Spec
+# Video Prompt Reverse
 
 Turn a reference video into an executable, evidence-linked generation package. Distinguish semantic recreation from exact reconstruction: a text prompt can preserve scene logic, action, camera language, pacing, and style, but cannot guarantee frame-identical output. Escalate to reference frames or control signals when identity, geometry, or motion fidelity matters.
 
